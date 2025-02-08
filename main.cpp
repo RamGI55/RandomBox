@@ -16,20 +16,21 @@ int main(int argc, const char * argv[]) {
     // pull the random number among them
     
     unsigned int pull;
-    int prox = 32000;
+    int prox = 120000;
     int SpendProx = 1200;
     int pullcount = 0;
     
-    std::cout << "Sensei, you have " << prox << " pronxene! ";
+    std::cout << "Sensei, you have " << prox << " pronxene! " << std::endl;
 
     std::cout << "please input how many you'd like to pull; 1 to 10 " << std::endl;
-    while (prox >= 0)
+    while (prox > SpendProx)
     {
-    std::cin >> pull;
+        std::cin >> pull;
         
-        if (pull ==0 || pull >10)
+        if (pull == 0 || pull >10)
         {
             std::cout << "invaild input, please try again";
+            break;
             
         }
         
@@ -43,7 +44,7 @@ int main(int argc, const char * argv[]) {
                 
                 if (970 <=randNumber && randNumber<= 999)
                 {
-                    std::cout << "You've pulled 3* Character" <<std::endl;
+                    std::cout << "You've pulled 3* Character!!!!!!!!!!!!" <<std::endl;
                 }
                 else if (786 <= randNumber && randNumber <=969)
                 {
